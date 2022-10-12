@@ -40,25 +40,32 @@ int main(void)
 void set_gameType(void)
 {
 	system("clear");
-	int gameType = 1;
+	int gameType;
 	printf("보물찾기 게임에 오신것을 환영합니다!!\n");
 	printf("게임을 시작하시려면 1 을 점수를 확인하시려면 2 를 입력해주세요!\n");
-	scanf("%d", &gameType);
-	if (gameType == 1)
+	while (1)
 	{
-		get_Number();
-		start_game();
+		scanf("%d", &gameType);
+		if (gameType == 1)
+		{
+			get_Number();
+			start_game();
+			break;
+		}
+		else if (gameType == 2)
+		{
+			display_rec();
+			clear_stdin();
+			printf("계속하시려면 아무키나 누르세요\n");
+			getch();
+			set_gameType();
+			break;
+		}
+		else
+		{
+			printf("잘못 입력하셨습니다. 다시 입력해주세요!\n");
+		}
 	}
-	else if (gameType == 2)
-	{
-		display_rec();
-		printf("계속하시려면 아무키나 누르세요\n");
-		clear_stdin();
-		getch();
-		set_gameType();
-	}
-	else
-		printf("잘못된 입력입니다.");
 }
 
 void get_Number(void)
@@ -68,8 +75,9 @@ void get_Number(void)
 		printf("보물의 개수를 입력해주세요(1~5) : ");
 		if (scanf("%d", &trNum) == 0)
 		{
-			printf("숫자를 입력해야 합니다!(1~5)\n");
 			clear_stdin();
+
+			printf("숫자를 입력해야 합니다!(1~5)\n");
 		}
 		else
 		{
@@ -84,8 +92,8 @@ void get_Number(void)
 		printf("지뢰의 개수를 입력해주세요(0~3) : ");
 		if (scanf("%d", &bmNum) == 0)
 		{
-			printf("숫자를 입력해야 합니다!(0~3)\n");
 			clear_stdin();
+			printf("숫자를 입력해야 합니다!(0~3)\n");
 		}
 		else
 		{
@@ -102,11 +110,11 @@ void get_Number(void)
 
 void start_game(void)
 {
-	struct timeval start = {};
-	struct timeval end = {};
 	int tx[trNum + bmNum], ty[trNum + bmNum];
 	int matrix[11][11] = {0};
 	char y;
+	struct timeval start = {};
+	struct timeval end = {};
 
 	make_treasure(tx, ty);
 	display_rule();
@@ -157,7 +165,6 @@ void display_rule(void)
 	basic_map();
 	printf("\n아무키나 누르면 시작합니다. \n");
 	getch();
-	clear_stdin();
 }
 
 void basic_map(void)
@@ -265,7 +272,7 @@ void display_rec(void)
 	int i;
 	printf("이름\t시간\t보물\t폭탄\n");
 	for (i = 0; i < 5; i++)
-		printf("%s\t%.2lf\t%d\t%d\n", sc[i].name, sc[i].time, sc[i].trNum, sc[i].bmNum);
+		printf("%s\t%.2lf\t %d\t %d\n", sc[i].name, sc[i].time, sc[i].trNum, sc[i].bmNum);
 }
 
 void move_arrow_key(char key, int *x1, int *y1, int x_b, int y_b)
@@ -339,8 +346,6 @@ void game_control(int tx[], int ty[])
 void game_over(void)
 {
 	int retry;
-	system("clear");
-	system("clear");
 	system("clear");
 	gotoxy(1, 1);
 	display_rec();
