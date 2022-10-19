@@ -226,7 +226,7 @@ void read_rec(void)
 {
 	FILE *fp;
 	int i = 0;
-	fp = fopen("rec", "r");
+	fp = fopen("rec.txt", "r");
 	if (fp == NULL)
 	{
 		printf("파일을 열 수 없습니다.\n");
@@ -246,7 +246,7 @@ void save_rec(void)
 {
 	FILE *fp;
 	char name[10];
-	fp = fopen("rec", "w");
+	fp = fopen("rec.txt", "w");
 	if (fp == NULL)
 	{
 		printf("파일을 열 수 없습니다.\n");
