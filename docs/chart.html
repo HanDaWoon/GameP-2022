@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chart</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+      integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      div {
+        width: fit-content;
+        border-style: solid;
+        border-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas id="myChart1" width="900" height="400"></canvas>
+    </div>
+    <br />
+    <div>
+      <canvas id="myChart2" width="900" height="400"></canvas>
+    </div>
+    <br />
+    <div>
+      <canvas id="myChart3" width="900" height="400"></canvas>
+    </div>
+    <script>
+      const ctx1 = document.getElementById("myChart1").getContext("2d");
+      const ctx2 = document.getElementById("myChart2").getContext("2d");
+      const ctx3 = document.getElementById("myChart3").getContext("2d");
+      const myChart1 = new Chart(ctx1, {
+        type: "bar",
+        data: {
+          labels: [
+            "Liux_Study",
+            "covid19",
+            "Algorithm_Study",
+            "GameP-2022",
+            "Python_Study",
+          ],
+          datasets: [
+            {
+              label: "커밋 수",
+              data: [12, 5, 45, 19, 9],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "저장소 별 커밋 수",
+            },
+          },
+        },
+      });
+      const myChart2 = new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: ["1월", "2월", "3월", "4월", "5월", "6월"],
+          datasets: [
+            {
+              label: "주가",
+              data: [12, 16, 14, 11, 8, 5],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "내 주식 특징",
+            },
+          },
+        },
+      });
+      const myChart3 = new Chart(ctx3, {
+        type: "pie",
+        data: {
+          labels: ["주식", "현금", "대출", "예적금"],
+          datasets: [
+            {
+              data: [31, 6, 48, 15],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "자산 현황",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
