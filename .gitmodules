@@ -1,0 +1,3 @@
+[submodule "studyCode/game_html/snake-game-javascript"]
+	path = studyCode/game_html/snake-game-javascript
+	url = https://github.com/HanDaWoon/snake-game-javascript
