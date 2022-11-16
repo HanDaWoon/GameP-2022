@@ -52,6 +52,10 @@ HTML과 CSS framework를 이용하여 만든 페이지 입니다.
     <h3>...</h3>
     <h4>...</h4>
     ``` 
+##### [Chart.js](https://www.chartjs.org/)
+  * ###### Bar
+  * ###### Line
+  * ###### Pie 
 >github.io와 netlify 배포주소
 >[handawoon.github.io](https://handawoon.github.io/GameP-2022/) / [netlify](https://10-28.netlify.app/) 
     
