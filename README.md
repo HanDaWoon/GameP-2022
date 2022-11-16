@@ -13,7 +13,9 @@
 
 #### 발표
 - [보물찾기 원본](https://github.com/HanDaWoon/GameP-2022/blob/master/studyCode/org8_7_1.cpp) / [보물찾기 기능추가](https://github.com/HanDaWoon/GameP-2022/blob/master/studyCode/tr8_7_1_utf8.c) / [Google Slide](https://docs.google.com/presentation/d/1h3wNfcy48Jh8Rp-TKfeJPTBJ142Gzw1PY9V4cztL5R4/edit?usp=sharing)
+- [Snake Game 원본](https://github.com/Pleiterson/snake-game-javascript) / [Snake Game 기능추가](https://github.com/HanDaWoon/snake-game-javascript) / [Google Slide](https://docs.google.com/presentation/d/15WtkpIcei3S87fdEKsJh83l-jf4OpYmV6tA66FWa-eo/edit?usp=sharing)
 
+-------
 #### DOCS
 HTML과 CSS framework를 이용하여 만든 페이지 입니다.
 ##### CSS Framework
@@ -50,6 +52,10 @@ HTML과 CSS framework를 이용하여 만든 페이지 입니다.
     <h3>...</h3>
     <h4>...</h4>
     ``` 
+
+-------
+#### Snake Game
+기존 게임에서 기능을 추가하였습니다.
 
 >github.io와 netlify 배포주소
 >[handawoon.github.io](https://handawoon.github.io/GameP-2022/) / [netlify](https://10-28.netlify.app/) 
