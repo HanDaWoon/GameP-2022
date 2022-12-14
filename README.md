@@ -74,7 +74,7 @@ HTML과 CSS framework를 이용하여 만든 페이지 입니다.
 <p align="center"><img src="./asset/cGame2.png" title="보물찾기"></p>
 
 - [보물찾기 원본](https://github.com/HanDaWoon/GameP-2022/blob/master/studyCode/org8_7_1.cpp) / [보물찾기 기능추가](https://github.com/HanDaWoon/GameP-2022/blob/master/studyCode/tr8_7_1_utf8.c) / [Google Slide](https://docs.google.com/presentation/d/1h3wNfcy48Jh8Rp-TKfeJPTBJ142Gzw1PY9V4cztL5R4/edit?usp=sharing)
-- 
+
 -------
 
 #### Snake Game
