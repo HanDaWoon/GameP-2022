@@ -63,15 +63,26 @@ HTML과 CSS framework를 이용하여 만든 페이지 입니다.
 
 #### 보물찾기
 기존 게임은 리눅스에서 구동이 불가능 했습니다.
+
 때문에 리눅스 에서 구동하기 위해 몇가지 함수를 추가/수정 하였습니다.
+
+지뢰/보물 개수를 조정 할 수 있게 하였습니다.
+
 시작/종료 화면을 추가하였으며 파일을 통해 점수를 저장/확인 할 수 있도록 만들었습니다.
-마지막으로 지뢰/보물 개수를 조정 할 수 있게 하였습니다.
+
 <p align="center"><img src="./asset/cGame1.png" title="보물찾기"></p>
 <p align="center"><img src="./asset/cGame2.png" title="보물찾기"></p>
 
+- [보물찾기 원본](https://github.com/HanDaWoon/GameP-2022/blob/master/studyCode/org8_7_1.cpp) / [보물찾기 기능추가](https://github.com/HanDaWoon/GameP-2022/blob/master/studyCode/tr8_7_1_utf8.c) / [Google Slide](https://docs.google.com/presentation/d/1h3wNfcy48Jh8Rp-TKfeJPTBJ142Gzw1PY9V4cztL5R4/edit?usp=sharing)
+- 
 -------
 
 #### Snake Game
-기존 게임에서 기능을 추가하였습니다.
+기존 게임에 기능을 추가하였습니다.
+- [Snake Game 원본](https://github.com/Pleiterson/snake-game-javascript) / [Snake Game 기능추가](https://github.com/HanDaWoon/snake-game-javascript) / [Google Slide](https://docs.google.com/presentation/d/15WtkpIcei3S87fdEKsJh83l-jf4OpYmV6tA66FWa-eo/edit?usp=sharing)
 
----> [Snake Game](https://github.com/HanDaWoon/snake-game-javascript)
+-------
+
+#### Find Coin
+Unity를 이용한 기존 게임에 기능을 추가하였습니다.
+- [원본](https://assetstore.unity.com/packages/3d/characters/eazy-camera-102275) /  [Google Slide](https://docs.google.com/presentation/d/1JcKJCU2uB9YWfynKRXF15ZwqXLHUrL4dj0sQubibXN0/edit?usp=sharing)
