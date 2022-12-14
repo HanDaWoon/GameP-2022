@@ -59,7 +59,13 @@ HTML과 CSS framework를 이용하여 만든 페이지 입니다.
 >github.io와 netlify 배포주소
 >[handawoon.github.io](https://handawoon.github.io/GameP-2022/) / [netlify](https://10-28.netlify.app/) 
     
-
+-------
+#### 보물찾기
+기존 게임은 리눅스에서 구동이 불가능 했습니다.
+때문에 리눅스 에서 구동하기 위해 몇가지 함수를 추가/수정 하였습니다.
+시작/종료 화면을 추가하였으며 파일을 통해 점수를 저장/확인 할 수 있도록 만들었습니다.
+마지막으로 지뢰/보물 개수를 조정 할 수 있게 하였습니다.
 -------
 #### Snake Game
 기존 게임에서 기능을 추가하였습니다.
+여기를 참조 해주세요!! -> [Snake Game 기능추가](https://github.com/HanDaWoon/snake-game-javascript)
